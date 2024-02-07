@@ -1,0 +1,34 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+
+:root {
+  // base
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1530px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(
+    var(--content-fluid-width) + (var(--container-offset) * 2)
+  );
+
+  // colors
+  --white: #fff;
+  --black: #000000;
+  --primary: #018fd5;
+  --secondary: #ffae0b;
+  --main-bg: var(--white);
+  --border-radius: 4px;
+  --transition: 0.3s ease;
+
+  // btn
+  --btn-default: var(--primary);
+  --btn-secondary: #7fac15;
+  --btn-box-shadow-default: 0 0 40px rgba(0, 142, 211, 0.5);
+  --btn-box-shadow-secondary: 0 0 40px rgba(127, 172, 21, 0.5);
+
+  // scrollbar
+  --main-scrollbar-width: 6px;
+  --main-scrollbar-color: var(--white);
+  --main-scrollbar-thumb-color: var(--primary);
+}

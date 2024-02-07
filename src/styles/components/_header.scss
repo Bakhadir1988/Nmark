@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 7px 0;
+
+  &__top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+.dashed {
+  border-bottom: 1px dashed var(--white);
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px dashed transparent;
+  }
+}

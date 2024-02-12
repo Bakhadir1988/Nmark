@@ -1,0 +1,19 @@
+.main__clients {
+  position: relative;
+
+  &-list {
+    &-item {
+      text-align: center;
+    }
+  }
+}
+
+.swiper {
+  &-clients {
+    overflow: hidden;
+  }
+
+  &-wrapper {
+    align-items: center;
+  }
+}

@@ -1,13 +1,71 @@
 .header {
-  background-color: var(--primary);
-  color: #fff;
-  padding: 7px 0;
+  &__top {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 7px 0;
+  }
 
-  &__top-wrapper {
+  &__bottom {
+    &-wrapper {
+      height: 100px;
+    }
+  }
+
+  &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+  }
+
+  &__logo {
+    width: 275px;
+    height: 52px;
+  }
+
+  &__menu {
+    nav {
+      ul {
+        display: flex;
+        gap: 60px;
+
+        li {
+          padding-left: 0;
+          &::before {
+            display: none;
+          }
+          a {
+            text-transform: uppercase;
+            color: #000;
+            transition: var(--transition);
+
+            &:hover {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 26px;
+      color: #000;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    span {
+      font-size: 12px;
+      color: #c4c4c4f5;
+    }
   }
 }
 
@@ -18,5 +76,11 @@
 
   &:hover {
     border-bottom: 1px dashed transparent;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    display: none;
   }
 }

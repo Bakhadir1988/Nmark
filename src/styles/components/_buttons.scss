@@ -4,8 +4,9 @@
   color: #fff;
   min-height: 50px;
   width: fit-content;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--border-radius);
   transition: background-color var(--transition), box-shadow var(--transition);
 
@@ -30,5 +31,9 @@
       transition: background-color var(--transition),
         box-shadow var(--transition);
     }
+  }
+
+  &-full {
+    width: 100%;
   }
 }

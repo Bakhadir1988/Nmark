@@ -1,0 +1,21 @@
+.main__advantages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(361px, 1fr));
+  align-items: flex-start;
+  gap: 30px;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  strong {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

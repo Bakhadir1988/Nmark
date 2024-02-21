@@ -3,6 +3,8 @@ import "../../node_modules/swiper/swiper-bundle.min.js";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
+import { Fancybox } from "@fancyapps/ui";
+
 const swiperClients = new Swiper(".swiper-clients", {
   modules: [Navigation, Pagination],
   speed: 1000,
@@ -33,3 +35,5 @@ const swiperClients = new Swiper(".swiper-clients", {
     },
   },
 });
+
+Fancybox.bind("[data-fancybox]");

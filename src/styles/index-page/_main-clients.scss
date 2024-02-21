@@ -6,14 +6,14 @@
       text-align: center;
     }
   }
-}
 
-.swiper {
-  &-clients {
-    overflow: hidden;
-  }
+  .swiper {
+    &-clients {
+      overflow: hidden;
+    }
 
-  &-wrapper {
-    align-items: center;
+    &-wrapper {
+      align-items: center;
+    }
   }
 }
